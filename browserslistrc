@@ -1,0 +1,30 @@
+last 2 versions
+not dead
+> 0.5%
+
+
+// plugins: [
+// new HtmlWebpackPlugin({
+// template: path.resolve(__dirname, "./src/template.html"),
+// filename: "index.html",
+// clean: true,
+// }),
+// new CleanWebpackPlugin(),
+// ],
+// module: {
+// rules: [
+// // JavaScript
+// // typescript-loader
+// {
+// test: /\.js$/,
+// exclude: /node_modules/,
+// use: ["babel-loader"],
+// },
+// // изображения
+// {
+// test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+
+// type: "asset/resource",
+// },
+// ],
+// },
