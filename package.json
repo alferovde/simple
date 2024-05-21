@@ -32,6 +32,8 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "autoprefixer": "10.4.5",
     "jquery": "^3.7.0",
     "owl.carousel": "^2.3.4",
     "postcss-preset-env": "^9.0.0",

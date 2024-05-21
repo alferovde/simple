@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" href="favicon.ico">
     <title>
-        new project
+        Простые вещи из бумаги
     </title>
 </head>
 
@@ -17,70 +17,259 @@
 
     <header class="header">
 
-        <div class="container">
-            header
+        <div class="header_wrapper container">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./img/logo.png" alt="">
+
+                </a>
+            </div>
+            <div class="header__nav">
+                <nav>
+                    <ul>
+                        <li><a href="#">Продукция</a></li>
+                        <li><a href="#">Материалы</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+
+                    </ul>
+                </nav>
+                <div class="mobile">
+                    <img src="./img/List.png" alt="">
+
+                </div>
+            </div>
+            <div class="header__login">
+                <div class="search">
+                    <a href="#" class="search_btn">
+                        <img src="./img/Search.png" alt="">
+                    </a>
+                    <input type="text" class="input_search animate__animated width0" placeholder="Найти">
+                    <img src="./img/close_btn.png" alt="" class="close_search hidden">
+                </div>
+
+                <a href="#">
+                    <img src="./img/log_in.png" alt="">
+                </a>
+            </div>
+
         </div>
 
     </header>
+    <nav class="mobile_menu animate__animated hidden">
+        <ul>
+            <li><img src="./img/close.png" alt="" class="close_btn"></li>
+            <li><a href="#">Продукция</a></li>
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+
+        </ul>
+    </nav>
 
     <main>
 
-        <section>
+        <section class="hero">
 
-            <div class="main container">
+            <div class="hero_wrapper container">
+                <div class="hero_info">
+                    <h1>Простые вещи. <br> Из бумаги</h1>
+                    <p>Бума́га (предположительно от итал. bombagia, первоисточником же считается иранский) — волокнистый
+                        материал с минеральными добавками. </p>
+                    <button class="btn_primary">Каталог</button>
+                </div>
+                <div class="hero_logo">
 
-                main containers
-                <a href="cart.html">cart</a>
-                <div class="owl-carousel owl-theme myclass">
-                    <div class="item">
-                        <h4>1</h4>
+                    <picture>
+                        <source srcset="img/hero_logo1.png" media="(max-width: 768px)">
+
+
+                        <img src="./img/hero_logo.png" alt="">
+                    </picture>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="results">
+
+            <div class="results_wrapper container">
+
+                <div class="results_items">
+                    <div class="result_item">
+                        <img src="./img/r1.png" alt="">
+                        <div class="result_item_info">
+                            <span>V.1</span>
+                            <p>Результат вашего обучения</p>
+                        </div>
                     </div>
-                    <div class="item">
-                        <h4>2</h4>
+                    <div class="result_item">
+                        <img src="./img/r2.png" alt="">
+                        <div class="result_item_info">
+                            <span>V.2</span>
+                            <p>Результат вашего обучения</p>
+                        </div>
                     </div>
-                    <div class="item">
-                        <h4>3</h4>
-                    </div>
-                    <div class="item">
-                        <h4>4</h4>
-                    </div>
-                    <div class="item">
-                        <h4>5</h4>
-                    </div>
-                    <div class="item">
-                        <h4>6</h4>
-                    </div>
-                    <div class="item">
-                        <h4>7</h4>
-                    </div>
-                    <div class="item">
-                        <h4>8</h4>
-                    </div>
-                    <div class="item">
-                        <h4>9</h4>
-                    </div>
-                    <div class="item">
-                        <h4>10</h4>
-                    </div>
-                    <div class="item">
-                        <h4>11</h4>
-                    </div>
-                    <div class="item">
-                        <h4>12</h4>
+                    <div class="result_item">
+                        <img src="./img/r3.png" alt="">
+                        <div class="result_item_info">
+                            <span>V.3</span>
+                            <p>Результат вашего обучения</p>
+                        </div>
                     </div>
 
                 </div>
-                main containers
+                <div class="results_info">
+                    <div class="results_info_logo">
+                        <!-- <img src="./img/r_logo.png" alt=""> -->
+                        <picture>
+                            <!-- <source srcset="img/hero_logo1.png" media="(max-width: 1100px)"> -->
+                            <!-- <source srcset="img/hero_logo2.png" media="(max-width:768px)"> -->
+
+                            <img src="./img/r_logo.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="results_info_desc">
+                        <h2>Максимальная белизна</h2>
+                        <p>Для повышения белизны, гладкости и мягкости в состав бумажной массы вводят белые минеральные
+                            вещества: мел, тальк, каолин и др. Эта операция называется наполнением.
+                        </p>
+                        <p>Отлив бумажного листа осуществляют на бумагоделательной машине, важнейшей частью которой
+                            является непрерывно движущаяся (как транспортер) металлическая или капроновая сетка.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="products">
+
+            <div class="products_wrapper container">
+                <div class="product_item">
+                    <picture>
+                        <source srcset="./img/p11.png" media="(max-width: 1000px)">
+
+
+                        <img src="./img/p1.png" alt="">
+                    </picture>
+
+                    <h4>Упаковка</h4>
+                    <span>Тираж: от 50 штук</span>
+                    <p>Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки,
+                        изготовим форму под заказ.</p>
+                    <a href="#">Подробнее<span>→</span> </a>
+                </div>
+                <div class="product_item">
+                    <picture>
+                        <source srcset="img/p22.png" media="(max-width: 1000px)">
+
+
+                        <img src="./img/p2.png" alt="">
+                    </picture>
+                    <h4>Пакеты</h4>
+                    <span>Тираж: от 200 штук</span>
+                    <p>С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные
+                        расцветки и дизайн.</p>
+                    <a href="#">Подробнее<span>→</span> </a>
+                </div>
+                <div class="product_item">
+                    <picture>
+                        <source srcset="img/p33.png" media="(max-width: 1000px)">
+
+
+                        <img src="./img/p3.png" alt="">
+                    </picture>
+                    <h4>Кейсы</h4>
+                    <span>Тираж: от 30 штук</span>
+                    <p>Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. Материал:
+                        прессованная бумага.</p>
+                    <a href="#">Подробнее<span>→</span> </a>
+                </div>
+                <div class="product_item">
+                    <picture>
+                        <source srcset="img/p44.png" media="(max-width: 1000px)">
+
+
+                        <img src="./img/p4.png" alt="">
+                    </picture>
+                    <h4>Другие изделия </h4>
+                    <span>Тираж: от 100 штук</span>
+                    <p>Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим
+                        в кратчайшие сроки.</p>
+                    <a href="#">Подробнее<span>→</span> </a>
+                </div>
+
+            </div>
 
         </section>
+
+        <section class="companies">
+            <div class="companies_wrapper container">
+
+                <img src="./img/c1.png" alt="">
+                <img src="./img/c2.png" alt="">
+                <img src="./img/c3.png" alt="">
+                <img src="./img/c4.png" alt="">
+
+            </div>
+
+        </section>
+
+
+        <section class="sketchbook">
+            <div class="sketchbook_wrapper container">
+                <div class="sketchbook_info">
+                    <h2>Simple скетчбук</h2>
+                    <p>80 листов, твердая обложка, бумага Fabriano 200 г/м2. Подойдет и для графики и для акварели. Для
+                        самых смелых творческих замыслов!</p>
+                    <button class="btn_primary">Купить</button>
+                </div>
+                <div class="sketchbook_logo">
+                    <picture>
+                        <source srcset="./img/book3.png" media="(max-width: 768px)">
+
+
+
+
+                        <img src="./img/book1.png" alt="">
+
+                    </picture>
+
+                </div>
+            </div>
+        </section>
+
+
 
     </main>
 
 
     <footer class="footer">
-        <div class="container">
-            footer
+
+        <div class="footer_top">
+            <div class="footer_top_wrapper container">
+
+                <div class="footer_logo">
+                    <img src="./img/logo2.svg" alt="">
+                </div>
+                <div class="footer_social">
+
+                    <a href="#"><img src="./img/s1.png" alt=""></a>
+                    <a href="#"><img src="./img/s2.png" alt=""></a>
+                    <a href="#"><img src="./img/s3.png" alt=""></a>
+                    <a href="#"><img src="./img/s4.png" alt=""></a>
+
+                </div>
+
+            </div>
         </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom_wrapper container">Simple <span> ®</span> 2021</div>
+        </div>
+
 
     </footer>
 

@@ -1,52 +1,80 @@
+body {
+  font-family: "Roboto", sans-serif;
+  min-width: 320px;
+}
+
 .container {
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
 }
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-
-  .header {
-    background-color: #e97d35;
-  }
+.hidden {
+  display: none;
 }
 
-@media (max-width: 992px) {
+.width0 {
+  width: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.result_item_head {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.btn_primary {
+  width: 255px;
+  height: 70px;
+  background-color: white;
+  color: $accent-color;
+  border: 1px solid $accent-color;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn_primary:hover {
+  background-color: $accent-color;
+  color: white;
+}
+
+.btn_primary:active {
+  background-color: #dad9fb;
+  color: $accent-color;
+}
+
+@media (max-width: 1440px) {
   .container {
-    max-width: 960px;
+    max-width: 1110px;
   }
-  .header {
-    background-color: #3547e9;
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1110px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 720px;
-  }
-  .header {
-    background-color: #c70f0f;
+    max-width: 690px;
   }
 }
 
 @media (max-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: 510px;
   }
-  .header {
-    background-color: #81c532;
+  .btn_primary {
+    width: 144px;
+    height: 50px;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 320px) {
   .container {
-    max-width: 380px;
-  }
-  .header {
-    background-color: #696969;
+    min-width: 290px;
   }
 }
